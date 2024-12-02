@@ -1,0 +1,5 @@
+datasets==2.19.0
+loguru
+numpy==1.23.0
+transformers==4.37.2
+tqdm>=4.27

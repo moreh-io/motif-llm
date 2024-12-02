@@ -1,0 +1,6 @@
+datasets==2.19.0
+loguru
+transformers==4.37.2
+tqdm
+accelerate
+deepspeed

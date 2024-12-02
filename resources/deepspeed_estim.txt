@@ -1,0 +1,10 @@
+Estimated memory needed for params, optim states and gradients for a:
+HW: Setup with 1 node, 8 GPUs per node.
+SW: Model with 102022M total params, 1182M largest layer params.
+  per CPU  |  per GPU |   Options
+ 2565.43GB |   4.40GB | offload_param=OffloadDeviceEnum.cpu, offload_optimizer=OffloadDeviceEnum.cpu, zero_init=1
+ 4560.76GB |   4.40GB | offload_param=OffloadDeviceEnum.cpu, offload_optimizer=OffloadDeviceEnum.cpu, zero_init=0
+ 2280.38GB |  28.16GB | offload_param=none, offload_optimizer=OffloadDeviceEnum.cpu, zero_init=1
+ 4560.76GB |  28.16GB | offload_param=none, offload_optimizer=OffloadDeviceEnum.cpu, zero_init=0
+   52.84GB | 218.19GB | offload_param=none, offload_optimizer=none, zero_init=1
+ 4560.76GB | 218.19GB | offload_param=none, offload_optimizer=none, zero_init=0
